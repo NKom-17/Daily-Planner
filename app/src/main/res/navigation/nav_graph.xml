@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.dailyplanner.presentation.screens.calendar.MainFragment"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main">
+        <action
+            android:id="@+id/action_mainScreen_to_taskInfoScreen"
+            app:destination="@id/taskInfoScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_createNewTaskScreen"
+            app:destination="@id/createNewTaskScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskInfoScreen"
+        android:name="com.example.dailyplanner.presentation.screens.taskInfo.TaskInfoScreen"
+        android:label="screen_task_info"
+        tools:layout="@layout/screen_task_info" />
+    <fragment
+        android:id="@+id/createNewTaskScreen"
+        android:name="com.example.dailyplanner.presentation.screens.createNewTask.CreateNewTaskScreen"
+        android:label="screen_create_new_task"
+        tools:layout="@layout/screen_create_new_task" />
+</navigation>

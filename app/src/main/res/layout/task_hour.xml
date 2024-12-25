@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_hour"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/task_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:autoSizeTextType="uniform"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text="@string/hour_task_time_text_for_debug"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:autoSizeTextType="uniform"
+        android:text="@string/hour_task_name_text_for_debug"
+        android:textStyle="bold" />
+</LinearLayout>
